@@ -1253,6 +1253,18 @@
       transition: opacity 0.5s ease, visibility 0.5s ease;
       padding: 2rem;
       padding: 2rem max(2rem, env(safe-area-inset-right)) 2rem max(2rem, env(safe-area-inset-left));
+    }
+
+    .brochure-overlay .brochure-backdrop {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      filter: brightness(1.4) saturate(1.15);
+      z-index: -1;
+    }urate(1.1);
+      z-index: -1;
+    }
       overscroll-behavior: contain;
     }
 
@@ -3320,9 +3332,22 @@
         margin-top:10px;
         color:var(--cream);
         font-family:var(--font-display);
-        font-size:1rem;">
+        font-size:1.2rem;
+        font-weight:500;">
         ${pkg.name}
-      </li>
+      </li>`;
+
+          pkg.details.forEach(item => {
+
+            html += `
+        <li style="
+          padding-left:22px;
+          font-size:1rem;
+          line-height:1.7;">
+          ${item}
+        </li>`;
+
+          });
     `;
 
           pkg.details.forEach(item => {
@@ -3330,7 +3355,8 @@
             html += `
         <li style="
           padding-left:22px;
-          font-size:.78rem;">
+          font-size:0.95rem;
+          line-height:1.6;">
           ${item}
         </li>
       `;
