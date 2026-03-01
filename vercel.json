@@ -3,10 +3,11 @@
   "outputDirectory": "public",
   "buildCommand": "echo Done",
   "installCommand": "echo Done",
+  "redirects": [
+    { "source": "/booking", "destination": "https://booking-three-alpha.vercel.app", "statusCode": 302 },
+    { "source": "/booking/:path*", "destination": "https://booking-three-alpha.vercel.app/:path*", "statusCode": 302 }
+  ],
   "rewrites": [
-    { "source": "/booking", "destination": "https://booking-three-alpha.vercel.app", "has": [{ "type": "host", "value": "angelphotographymiami.com" }] },
-    { "source": "/booking", "destination": "https://booking-three-alpha.vercel.app" },
-    { "source": "/booking/:path*", "destination": "https://booking-three-alpha.vercel.app/:path*" },
     { "source": "/admin", "destination": "https://angel-photographer.vercel.app/admin" },
     { "source": "/admin/:path*", "destination": "https://angel-photographer.vercel.app/admin/:path*" },
     { "source": "/:path*", "destination": "/index.html" }
