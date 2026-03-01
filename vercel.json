@@ -1,5 +1,7 @@
 {
   "framework": null,
+  "buildCommand": null,
+  "installCommand": null,
   "routes": [
     { "src": "/booking/(.*)", "dest": "https://photo-booking-flax.vercel.app/$1" },
     { "src": "/admin/(.*)", "dest": "https://angel-photographer.vercel.app/admin/$1" },
