@@ -1,5 +1,6 @@
 {
   "framework": "vite",
+  "outputDirectory": "public",
   "buildCommand": "echo Done",
   "installCommand": "echo Done",
   "rewrites": [
