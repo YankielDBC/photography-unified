@@ -1,11 +1,13 @@
 {
-  "version": 2,
+  "framework": "static",
+  "buildCommand": "echo Done",
+  "installCommand": "echo Done",
   "routes": [
-    { "src": "/booking", "dest": "https://photo-booking-flax.vercel.app", "status": 200 },
-    { "src": "/booking/(.*)", "dest": "https://photo-booking-flax.vercel.app/$1", "status": 200 },
-    { "src": "/admin", "dest": "https://angel-photographer.vercel.app/admin", "status": 200 },
-    { "src": "/admin/(.*)", "dest": "https://angel-photographer.vercel.app/admin/$1", "status": 200 },
+    { "src": "/booking", "status": 200, "destination": "https://photo-booking-flax.vercel.app" },
+    { "src": "/booking/(.*)", "status": 200, "destination": "https://photo-booking-flax.vercel.app/$1" },
+    { "src": "/admin", "status": 200, "destination": "https://angel-photographer.vercel.app/admin" },
+    { "src": "/admin/(.*)", "status": 200, "destination": "https://angel-photographer.vercel.app/admin/$1" },
     { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/index.html" }
+    { "src": "/(.*)", "destination": "/index.html" }
   ]
 }
