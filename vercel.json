@@ -4,8 +4,8 @@
   "buildCommand": "echo Done",
   "installCommand": "echo Done",
   "rewrites": [
-    { "source": "/booking", "destination": "https://booking-three-alpha.vercel.app" },
-    { "source": "/booking/:path*", "destination": "https://booking-three-alpha.vercel.app/:path*" },
+    { "source": "/booking", "destination": "https://booking-six.vercel.app" },
+    { "source": "/booking/:path*", "destination": "https://booking-six.vercel.app/:path*" },
     { "source": "/admin", "destination": "https://angel-photographer.vercel.app/admin" },
     { "source": "/admin/:path*", "destination": "https://angel-photographer.vercel.app/admin/:path*" },
     { "source": "/:path*", "destination": "/index.html" }
