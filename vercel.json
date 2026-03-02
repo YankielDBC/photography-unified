@@ -4,6 +4,7 @@
   "buildCommand": "echo Done",
   "installCommand": "echo Done",
   "redirects": [
+    { "source": "/book", "destination": "/booking", "statusCode": 302 },
     { "source": "/booking", "destination": "https://booking-three-alpha.vercel.app", "statusCode": 302 },
     { "source": "/booking/:path*", "destination": "https://booking-three-alpha.vercel.app/:path*", "statusCode": 302 }
   ],
